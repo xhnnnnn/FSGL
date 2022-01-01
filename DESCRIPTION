@@ -1,0 +1,25 @@
+Package: FSGL
+Title: Fit a Linear Model with a Combination of Lasso and Group 
+        Lasso Regularization. The calculation will more fast than 'SGL' package.
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Haonan",
+           family = "Xiao",
+           role = c("aut", "cre"),
+           email = "xiaohaonan1999@ruc.edu.cn"),
+    person(given = "Ke",
+           family = "Jia",
+           role = c("aut"),
+           email = "jiake1999@163.com"))
+Description: Fit a fast regularized linear model via penalized
+        maximum likelihood.  The model is fit for a path of values of
+        the penalty parameter. Fits linear models.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    Rcpp,
+    RcppArmadillo,
+    stats
+LinkingTo: Rcpp, RcppArmadillo
