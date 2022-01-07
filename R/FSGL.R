@@ -1,4 +1,4 @@
-#' @title FSGL
+#' @title Fit a Linear Model with a Combination of Lasso and Group Lasso Regularization
 #' @description Fit a regularized generalized linear model via penalized maximum likelihood. The model is fit for a path of values of the penalty parameter. Fits linear, logistic and Cox models.
 #'
 #' @param data data should be a list of $x$ and $y$, x is a data matrix (n x p) and y is a vector
@@ -14,7 +14,7 @@
 #' @param reset Fitting parameter used for taking advantage of local strong convexity in nesterov momentum (number of iterations before momentum term is reset)
 #' @param alpha The mixing parameter. \code{alpha} = 1 is the lasso penalty. \code{alpha} = 0 is the group lasso penalty.
 #' @param lambdas A user specified sequence of lambda values for fitting. We recommend leaving this NULL and letting SGL self-select values
-#' @param UseUpperBound A logical flag for using error bound
+#' @param UseUpperBound A logical flag for using upper bound
 #'
 #' @return
 #' An object of type "FSGL"

@@ -2,7 +2,7 @@
 % Please edit documentation in R/FSGL.R
 \name{FSGL}
 \alias{FSGL}
-\title{FSGL}
+\title{Fit a Linear Model with a Combination of Lasso and Group Lasso Regularization}
 \usage{
 FSGL(
   data,
@@ -48,7 +48,7 @@ FSGL(
 
 \item{lambdas}{A user specified sequence of lambda values for fitting. We recommend leaving this NULL and letting SGL self-select values}
 
-\item{UseUpperBound}{A logical flag for using error bound}
+\item{UseUpperBound}{A logical flag for using upper bound}
 }
 \value{
 An object of type "FSGL"

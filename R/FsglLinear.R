@@ -1,10 +1,10 @@
 FsglLinear <-
   function(data, index, thresh = 0.0001, nlam = 20, lambdas = NA, inner.iter = 100, outer.iter = 100, outer.thresh = 0.0001, gamma = 0.8, step = 1, reset = 10, alpha = 0.95, min.frac = 0.05, verbose = FALSE, UseUpperBound=FALSE){
     ## If not given lambdas, we use a method to generate lambda
-    if(exists("lambdas")){
+    if(is.null(lambdas)){
       lambdas <- NA;
     }
-    if(is.na(lambdas)){
+    if(sum(is.na(lambdas))!=0){
       lambdas <- betterPathCalc(data = data, index = index, alpha=alpha, min.frac = min.frac, nlam = nlam, type = "linear")
     }
 

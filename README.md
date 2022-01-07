@@ -8,7 +8,8 @@ Installation
 `FSGL` can be installed via Github using `devtools`
 
     # install.packages("devtools")
-    devtools::install_github("xhnnnnn/FSGL")
+    library(devtools)
+    devtools::install_github("xhnnnn/FSGL")
 
 You'll need a working C++11 compiler, which can obtained by installing
 Xcode on MacOS, and RTools on Windows.
