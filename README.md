@@ -9,7 +9,7 @@ Installation
 
     # install.packages("devtools")
     library(devtools)
-    devtools::install_github("xhnnnn/FSGL")
+    devtools::install_github("xhnnnnn/FSGL")
 
 You'll need a working C++11 compiler, which can obtained by installing
 Xcode on MacOS, and RTools on Windows.
